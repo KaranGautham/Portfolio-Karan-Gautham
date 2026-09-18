@@ -389,14 +389,54 @@ main {
     margin-bottom: 1rem !important;
 }
 
-.contact-meta {
-    margin-top: 1.5rem !important;
-    font-size: 0.9rem;
+.get-in-touch-toggle {
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem;
 }
 
-.contact-meta a {
-    color: var(--accent);
+.get-in-touch-toggle i {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+.get-in-touch-toggle[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.contact-link {
+    color: var(--text-secondary);
     text-decoration: none;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: color 0.3s ease;
+}
+
+.contact-link i {
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+.contact-link:hover {
+    color: var(--text-primary);
 }
 
 .project-link {
