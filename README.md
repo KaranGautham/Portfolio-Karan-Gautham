@@ -2,7 +2,7 @@
 
 Personal portfolio site built with plain HTML, CSS, and JavaScript.
 
-**Live:** https://karangautham.github.io/Portfolio-Karan-Gautham/
+**Live:** https://karangautham.github.io/portfolio/
 
 ## Sections
 - **Home** — intro, role, and contact rail (GitHub, Email, WhatsApp)
