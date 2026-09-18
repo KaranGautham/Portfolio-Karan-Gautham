@@ -15,15 +15,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Subtle parallax effect on mouse move for the blob
-document.addEventListener('mousemove', (e) => {
-    const blob = document.querySelector('.blob');
-    const x = (window.innerWidth / 2 - e.pageX) / 25;
-    const y = (window.innerHeight / 2 - e.pageY) / 25;
-    
-    blob.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
-});
-
 // Get In Touch reveal toggle
 const getInTouchToggle = document.getElementById('getInTouchToggle');
 const contactLinks = document.getElementById('contactLinks');
