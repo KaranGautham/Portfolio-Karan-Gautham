@@ -24,10 +24,11 @@ document.addEventListener('mousemove', (e) => {
     blob.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
 });
 
-// Simple mobile menu toggle alert (can be expanded)
+// Mobile menu toggle
 const mobileMenu = document.querySelector('.mobile-menu');
-if(mobileMenu) {
+const navLinks = document.querySelector('.nav-links');
+if(mobileMenu && navLinks) {
     mobileMenu.addEventListener('click', () => {
-        alert('Mobile menu clicked - add your drawer logic here!');
+        navLinks.classList.toggle('open');
     });
 }
