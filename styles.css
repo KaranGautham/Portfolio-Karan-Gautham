@@ -23,43 +23,6 @@ body {
     position: relative;
 }
 
-.bg-shapes {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.shape {
-    position: absolute;
-    background: var(--dark);
-    opacity: 0.05;
-}
-
-.shape-circle {
-    border-radius: 50%;
-}
-
-.shape-square {
-    border-radius: 16px;
-    transform: rotate(20deg);
-}
-
-.shape-ring {
-    border-radius: 50%;
-    background: none;
-    border: 24px solid var(--dark);
-    opacity: 0.05;
-}
-
-.s1 { width: 260px; height: 260px; top: -60px; left: -60px; }
-.s2 { width: 160px; height: 160px; top: 15%; right: 8%; }
-.s3 { width: 220px; height: 220px; top: 55%; left: -80px; }
-.s4 { width: 140px; height: 140px; bottom: 5%; right: 15%; }
-.s5 { width: 100px; height: 100px; top: 75%; right: -30px; transform: rotate(-15deg); }
-.s6 { width: 320px; height: 320px; bottom: -120px; left: 25%; }
-
 /* Navbar */
 .navbar {
     display: flex;
@@ -304,7 +267,7 @@ main {
 
 .glass-panel {
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--dark);
     border-radius: 16px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
