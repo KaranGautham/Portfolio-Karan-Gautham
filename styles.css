@@ -43,11 +43,11 @@ body {
     align-items: center;
     gap: 0.5rem;
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--dark);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-primary);
 }
 
@@ -66,9 +66,9 @@ body {
 }
 
 .nav-links a {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
@@ -87,7 +87,7 @@ body {
     height: 64px;
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--dark);
     flex-shrink: 0;
 }
 
@@ -104,13 +104,13 @@ body {
     color: white !important;
     padding: 0.7rem 1.4rem;
     border-radius: 30px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     transition: all 0.3s ease;
-    border: none;
+    border: 2px solid var(--dark);
     cursor: pointer;
 }
 
@@ -194,13 +194,13 @@ main {
     align-items: center;
     gap: 0.6rem;
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--dark);
     padding: 0.6rem 1.2rem;
     border-radius: 30px;
     color: var(--text-primary);
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 700;
     transition: all 0.3s ease;
 }
 
@@ -210,8 +210,13 @@ main {
 }
 
 .social-pill:hover {
-    border-color: var(--text-primary);
+    background: var(--dark);
+    color: white;
     transform: translateY(-2px);
+}
+
+.social-pill:hover i {
+    color: white;
 }
 
 /* About Section */
@@ -237,9 +242,15 @@ main {
     gap: 1.5rem;
 }
 
+.skill-group {
+    border-left: 3px solid var(--dark);
+    padding-left: 0.9rem;
+}
+
 .skill-group h4 {
-    color: var(--accent);
+    color: var(--text-primary);
     font-size: 0.95rem;
+    font-weight: 700;
     margin-bottom: 0.4rem;
 }
 
@@ -296,22 +307,33 @@ main {
 .project-stack {
     color: var(--accent) !important;
     font-size: 0.85rem !important;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1rem !important;
 }
 
 .get-in-touch-toggle {
-    background: none;
-    border: none;
-    color: var(--accent);
+    background: var(--card-bg);
+    border: 2px solid var(--dark);
+    color: var(--text-primary);
     font-family: inherit;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.5rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.get-in-touch-toggle:hover {
+    background: var(--dark);
+    color: white;
+}
+
+.get-in-touch-toggle:hover i {
+    color: white;
 }
 
 .get-in-touch-toggle i {
@@ -332,13 +354,17 @@ main {
 }
 
 .contact-link {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     text-decoration: none;
+    font-weight: 600;
     font-size: 0.95rem;
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 30px;
+    transition: all 0.3s ease;
 }
 
 .contact-link i {
@@ -347,13 +373,13 @@ main {
 }
 
 .contact-link:hover {
-    color: var(--text-primary);
+    border-color: var(--dark);
 }
 
 .project-link {
     color: var(--accent);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.9rem;
     display: inline-flex;
     align-items: center;
